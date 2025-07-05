@@ -74,7 +74,9 @@
 
 .about .box .img {
     flex: 1;
-    margin: 0 auto 20px;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
 }
 
 .about .box .img img {
@@ -84,10 +86,12 @@
 
 .about .box .text {
     flex: 2;
+    margin: 10px;
 }
 
 .about .box .text h3 {
     color: var(--color-blue-2);
+    margin-top: 15px;
 }
 
 .about .box .text p{
@@ -100,10 +104,68 @@
     font-weight: 400;
 }
 
+/* box skills*/
+
+.skills {
+    background-color: var(--color-black-1);
+}
+
+.skills .box h2, h3, h4 {
+    color: white;
+}
+
+.skills .box h3 {
+    margin: 5px 0 20px;
+    font-size: var(--font-size-4);
+}
+
+.skills .box .titles h2 {
+    margin-top: 40px;
+}
+
+.skills .box .titles {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills .box .items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.skills .box .items .skill {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skills .box .items .skill:hover {
+    background-color: #ffffff1f;
+}
+
+.skills .box .items .skill img, svg {
+    width: 90px;
+}
+
+.skills .box .items .skills h4 {
+    margin-top: 15px;
+}
+
 @media (min-width: 768px) {
 
     .about .box {
         flex-direction: row;
+    }
+
+    .about .box .img {
+        margin: 20px 0 20px 20px;
     }
 
     .about .box .img img {
@@ -112,6 +174,14 @@
 
     .about .box .text {
         padding-left: 40px;
+    }
+
+    .skills .box .items .skill {
+        width: 25%;
+    }
+
+    .skills .box .items .skill img, svg {
+        width: 120px;
     }
 
 }

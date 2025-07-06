@@ -237,6 +237,71 @@
     font-size: 8px;
 }
 
+/* box contact */    
+
+.contact {
+    background-color: var(--color-black-1);
+}
+
+.contact .box {
+    max-width: 880px;
+}
+
+.contact .box h2, h3 {
+    color: white;
+}
+
+.contact .box h3 {
+    margin-top: 5px;
+}
+
+.contact .box h2 {
+    margin-top: 10px;
+}
+
+.contact .box .titles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact .box .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 25px 0;
+}
+
+.contact .box .contacts a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--color-pink-1);
+    height: 50px;
+    color: white;
+    border-radius: 35px;
+    min-width: 200px;
+    font-weight: 700;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.contact .box .contacts a:hover {
+    background-color: #f42771bf;
+}
+
+.contact .box .contacts a span {
+    font-size: 35px;
+    margin-right: 5px;
+}
+
+.contact .box .contacts a svg {
+    width: 30px;
+    margin-right: 5px;
+}
+
 @media (min-width: 768px) {
 
     .about .box {
@@ -267,5 +332,15 @@
     .projects .box .project.reverse {
         flex-direction: row;
     }
+    
+    .contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact .box .contacts {
+        flex-direction: row;
+    }
+
 
 }
